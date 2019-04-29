@@ -7,7 +7,7 @@ module.exports = {
   siteTitleAlt: 'Demo', // Alternative Site title for SEO
   siteTitleShort: 'Demo', // short_name for manifest
   siteHeadline: 'Creating marvelous art & blazingly fast websites using Gatsby', // Headline for schema.org JSONLD
-  siteUrl: '', // Domain of your site. No trailing slash!
+  siteUrl: 'https://google.com', // Domain of your site. No trailing slash!
   siteLanguage: 'en', // Language Tag on <html> element
   siteLogo: '/logo.png', // Used for SEO and manifest
   siteDescription: 'Playful & Colorful One-Page website with Parallax effect',
