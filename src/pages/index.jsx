@@ -16,8 +16,12 @@ import Hero from '../views/Hero'
 import Projects from '../views/Projects'
 import About from '../views/About'
 import Contact from '../views/Contact'
+import HeaderBar from '../views/HeaderBar'
 
 import avatar from '../images/avatar.jpg'
+//import Popup from "reactjs-popup";
+import ReactModal from 'react-modal'
+//import ModalWindow from '../components/ModalWindow'
 
 const ProjectsWrapper = styled.div`
   ${tw`flex flex-wrap justify-between mt-8`};
@@ -42,7 +46,7 @@ const Avatar = styled.img`
 `
 
 const AboutSub = styled.span`
-  ${tw`text-white pt-12 lg:pt-0 lg:pl-12 text-2xl lg:text-3xl xl:text-4xl`};
+  ${tw`text-grey-light font-sans flex flex-col pt-12 lg:pt-0 lg:pl-12 text-2xl lg:text-3xl xl:text-4xl`};
 `
 
 const AboutDesc = styled.p`
@@ -60,7 +64,9 @@ const Footer = styled.footer`
 const Index = () => (
   <>
     <Layout />
-    <Parallax pages={5}>
+    <Parallax pages={5}>  
+      <HeaderBar offset={0}>
+      </HeaderBar>
       <Hero offset={0}>
         <BigTitle>
           Hello, <br /> Welcome to my demo.
@@ -129,5 +135,6 @@ const Index = () => (
     </Parallax>
   </>
 )
+
 
 export default Index

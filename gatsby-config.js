@@ -9,6 +9,7 @@ module.exports = {
   },
   /* Plugins */
   plugins: [
+    'gatsby-plugin-postcss',
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-styled-components',
     {
