@@ -22,6 +22,8 @@ import avatar from '../images/avatar.jpg'
 //import Popup from "reactjs-popup";
 import ReactModal from 'react-modal'
 //import ModalWindow from '../components/ModalWindow'
+import { useSpring, animated } from 'react-spring'
+
 
 const ProjectsWrapper = styled.div`
   ${tw`flex flex-wrap justify-between mt-8`};
@@ -61,35 +63,40 @@ const Footer = styled.footer`
   ${tw`text-center text-grey absolute pin-b p-6 font-sans text-md lg:text-lg`};
 `
 
+//const { x } = useSpring({ from: { x: 0 }, x: state ? 1 : 0, config: { duration: 1000 } })
+
+
 const Index = () => (
   <>
     <Layout />
     <Parallax pages={5}>  
       <HeaderBar offset={0}>
+          {'Home'}
+          {'Tracking'}
+          {'About'}
       </HeaderBar>
       <Hero offset={0}>
         <BigTitle>
-          Hello, <br /> Welcome to my demo.
+          Hello, <br /> Welcome to my Tracking App.
         </BigTitle>
-        <Subtitle>Build your own homepage and display your favorite things!</Subtitle>
+        <Subtitle>Track your favorite people at their favorite places!</Subtitle>
       </Hero>
       <Projects offset={1}>
-        <Title>Projects</Title>
+        <Title>Companies</Title>
         <ProjectsWrapper>
           <ProjectCard
-            title="Freiheit"
-            link="https://www.behance.net/gallery/58937147/Freiheit"
+            title="Newt Global"
+            link="https://www.newtglobal.com"
             bg="linear-gradient(to right, #D4145A 0%, #FBB03B 100%)"
           >
-            This project is my entry to Adobe's #ChallengeYourPerspective contest.
           </ProjectCard>
           <ProjectCard
-            title="Harry Potter"
-            link="https://www.behance.net/gallery/52915793/Harry-Potter"
+            title="EFMFM"
+            link="https://www.efmfm.com"
             bg="linear-gradient(to right, #662D8C 0%, #ED1E79 100%)"
           >
-            I entered the DOCMA 2017 award with this Harry Potter inspired image.
           </ProjectCard>
+{/*
           <ProjectCard
             title="Tomb Raider"
             link="https://www.behance.net/gallery/43907099/Tomb-Raider"
@@ -104,6 +111,7 @@ const Index = () => (
           >
             A fantasy image manipulation relocating the habitat of wild animals.
           </ProjectCard>
+*/}
         </ProjectsWrapper>
       </Projects>
       <About offset={3}>
