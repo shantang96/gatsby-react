@@ -22,7 +22,6 @@ import avatar from '../images/avatar.jpg'
 //import Popup from "reactjs-popup";
 import ReactModal from 'react-modal'
 //import ModalWindow from '../components/ModalWindow'
-import { useSpring, animated } from 'react-spring'
 
 
 const ProjectsWrapper = styled.div`
@@ -63,13 +62,10 @@ const Footer = styled.footer`
   ${tw`text-center text-grey absolute pin-b p-6 font-sans text-md lg:text-lg`};
 `
 
-//const { x } = useSpring({ from: { x: 0 }, x: state ? 1 : 0, config: { duration: 1000 } })
-
-
 const Index = () => (
   <>
     <Layout />
-    <Parallax pages={5}>  
+    <Parallax pages={5} style={{background: '#161719'}}>  
       <HeaderBar offset={0}>
           {'Home'}
           {'Tracking'}

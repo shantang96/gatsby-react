@@ -56,7 +56,7 @@ const HeaderBar = ({ children, offset }) => {
     <NuNavbar sticky="top" variant="light" expand="lg">
         <NuNav>
             <NuNavLink href="/">{children[0]}</NuNavLink>
-            <NuNavLink>{children[1]}</NuNavLink>
+            <NuNavLink href="/tracking">{children[1]}</NuNavLink>
             <NuNavLink>{children[2]}</NuNavLink>
         </NuNav>
         <NuForm>

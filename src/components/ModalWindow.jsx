@@ -4,7 +4,6 @@ import { Link } from 'gatsby'
 
 import Layout from '../components/Layout'
 
-ReactModal.setAppElement('#main')
 
 class ModalPage extends Component {
   constructor(props) {
