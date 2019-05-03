@@ -54,7 +54,7 @@ Check your development environment! You'll need [Node.js](https://nodejs.org/en/
 To copy and install this starter run this command (with "project-name" being the name of your folder you wish to install it in):
 
 ```
-gatsby new project-name https://github.com/LekoArts/gatsby-starter-portfolio-cara
+gatsby new project-name https://github.com/shantang96/gatsby-react
 cd project-name
 npm run dev
 ```
